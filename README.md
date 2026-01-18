@@ -1,38 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Мой первый сайт (с цветами+CSS вручную)</title>
-    <style>
-      body {
-      background-color: lightblue;
+    <title>Мой первый сайт</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        background-color: #f4f4f4;
+        text-align: center;
+        transition: background-color 0.5s, color 0.5s;
+        }
+   
+  h1 {
+        font-size: 34px;
+        color: #0077ff;
     }
-    h2 {
-      color: navy;
-      text-align: center;
+  h2 {
+    font-size: 28px;
+    color: #0055cc;
+    margin-top: 20px;
     }
-    p {
-      text-align: center;
-      font-size: 16px;
-      color: darkgray;
-    }
-  </style>
+
+.content-block {
+    font-size: 24px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode section {
+    background-color: #333; /* Темный фон для секций */
+    color: #fff; /* Белый текст */
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+.dark-mode a {
+    color: #ffcc00; /* Золотистый цвет ссылок */
+    text-decoration: none;
+}
+.dark-mode a:hover {
+    color: #ff9900; /* Цвет ссылок при наведении */
+}
+
+
+button {
+    background-color: #0077ff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0055cc;
+}
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #0077ff;
+    text-align: center;
+}
+
+</style>
 </head>
 <body>
-    <h2>Добро пожаловать на мой сайт!</h2>
-    <p>Это мой первый сайт, созданный с помощью HTML и CSS для стилизации.</p> 
 
- <p>Об HTML я узнал в 2023 году, когда изучал возможность перехода в IT. Изучая описания языков программирования, я увидел рекомендацию, что можно начать с программирования в HTML.</p> 
+<h1 style="color: blue; text-align: center;">Здравствуйте!</h1>
 
- <p>Спустя более, чем через год, я попробовал. Мне пока нравится.</p>
+<h1>Добро пожаловать на мой сайт!</h1>
 
-<p>Сегодня утром в 11:09, 18.01.2024 я научился использовать тег (''p../p''), используя его для переноса абзацев, попутно узнав, что если отображать тег с помощью горизонтальных галочек, то ничего не отобразиться, поэтому пришлось использовать кавычки и круглые скобки. </p>
+<div class="content-block">
+<section> 
+    <h2>О сайте</h2>
+    <p>Это мой первый сайт, созданный с помощью HTML и Блокнота.</p>
+    <p>Меня заинтересовало изучать веб-разработку и экспериментировать с кодом.</p>
+</section> 
+    <button onclick="changeTheme()">Сменить тему</button>
+</div>
     
-<p><a href="https://www.youtube.com/">Посетите мой любимый сайт</a></p>
+<section>
+ <h2>Мой путь в IT</h2>
+ <p>Об HTML я узнал в 2023 году, когда изучал возможность перехода в IT. Изучая описания языков программирования, я увидел рекомендацию, что можно начать с программирования в HTML.</p> 
+ <p>Спустя более, чем через год, я попробовал. Мне пока нравится.</p>
+</section>
+
+<section>
+<p>Сегодня утром в 11:09, 18.01.2024 я научился использовать тег (''p../p''), используя его для переноса абзацев, попутно узнав, что если отображать тег с помощью горизонтальных галочек, то ничего не отобразиться, поэтому пришлось использовать кавычки и круглые скобки. </p>
+</section>
+
+<section>    
+<a href="https://www.youtube.com/">Посетите мой любимый сайт</a>
 
 <p>Это мой любимый сайт уже очень долгое время, по-моему с 2016-2017 гг.</p> 
 
-<p><a href="https://www.linkedin.com/">Однако, кроме него есть ещё этот </a></p>
+<a href="https://www.linkedin.com/">Однако, кроме него есть ещё этот </a>
   
 <p> Огромная благодарность материалам сайтов:</p>
 
@@ -45,28 +126,58 @@
 <p> Ссылка ниже позже пригодится:</p>
 
 <p><a href="https://dzen.ru/a/YKN_4Xm-fiF0C0c3"> "Как опубликовать сайт в интернете бесплатно."</a></p>
+</section>
 
-<p> Пробуем вставить картинку (31.05.2025): </p>
+<section>
+<p> Сегодня (01.06.2025) Я показал код ИИ, Copilot, и он мне сходу дал советы, как улучшить сайт.</p>
 
+<p>Удивительно, что он мне с ходу сгенерировал код для добавки стиля CSS. </p>
+
+<p>В одном варианте он мне предложил встроенный стиль добавления. Он как раз здесь продемонстирован, и проявлется в выравнивании текста по центру и в надписи: "Добро пожаловать на мой сайт!"</p>
+
+<p>Также он дал мне строчку кода, чтобы применить к отдельным элементам прямо в коде. В результате чего появился дополнительный заголовок серого цвета: "Здравствуйте!" </p>
+
+<p>Так я впервые применил ИИ для улучшения страницы сайта. </p>
+
+<p> На данный момент (01.06.2025, в 4:38 Copilot дал мне элементы кода, чтобы внедрить:</p>
+
+<p>1. Добавление кнопки и её доработку (Html, CSS)</p>
+
+<p>2. Добавление анимации (CSS)</p>
+
+<p>3. Размещение кнопки (Html)</p>
+</section>
+
+<section>
+<h2>Мои достижения</h2>
+<p> Попробуем вставить картинку (01.06.2025б 4:51): </p>
 
 <figure>
-<p><img src="Flowers.jpg" 
-      alt="Цветы жёлтые и красные в огороде."
+<p><img src="Flowers1.jpg" alt="Цветы жёлтые и красные в огороде."
       width = "300"
-      height = "200"/> </p>
-
+      height = "200"/></p>
 <figcaption><p>Цветы жёлтые и красные в огороде.</p></figcaption>
 </figure>
 
-
 <p> Спасибо данной инструкции: </p>
 
-<p> <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/HTML_images"> "Изображения в HTML."</a></p>
+<p><a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/HTML_images"> "Изображения в HTML."</a> </p>
+</section>
 
-<p>Есть также версия сайта, сделанного с помощью Copilot:</p>
-<p><a href=_____"Версия сайта, созданного с помощью Copilot></a></p>
+<section>
+<p> В 05:20 утра с помощью совета ИИ менял размеры текста в блоке и на самой странице, как заголовки, так и основной текст.
+В 16:03 (01.06.2025) я доработал сайт, согласно советам ИИ. Благодаря его советам ознакомился с функцией ("section"), внедрил дополнительный  подзаголовок ("h2"). Также отладили с ним проблемы с переходом в темновой режим для всех ссылок, и вообще сам переход, а то перестал работать в какой-то момент. Отладили с ним цвета шрифтов ссылок, чтобы при переходе в тёмный режим, ссылки были читабельны, буквы меняли свой цвет, и их было видно. Также очень ИИ помог на оптимизации кода: убрать повторы, сделать объединение его частей.  </p>
+</section>
 
 <p> Всем успешного дня! </p>
+
+<button onclick="changeTheme()">Сменить тему</button>
+<script>
+    function changeTheme() {
+        let body = document.body;
+        body.classList.toggle("dark-mode");
+    }
+</script>
 
 </body>
 </html>
